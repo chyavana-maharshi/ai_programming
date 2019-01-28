@@ -1,0 +1,49 @@
+Respository mainly contain artificial intelligence related projects.
+
+1. Pilot scotter
+
+Project description. 
+
+    Project aims at helping the LA Dept of Transportation (LADOT) to develop a pilot scooter program for LA. 
+    There are a limited number of police officers available to monitor and address issues that may arise from scooters, 
+    ranging from traffic and safety violations to accidents with cars, bikes, other scooters and pedestrians. 
+    The scooter companies have given LADOT access to scooterroutes over the course of one day. 
+    In order to maximize the scooter activity monitored by the officers, you will take as input the route information,
+    the monitored city area dimensions, and the number of officers available to then generate the best placement of the officers.
+    The officers can only be in one place for one day, and there can only be one officer on each street. 
+    When an officer and scooter are at the same location at the same time, the officer is able to address a safety issue, 
+    and one “Activity point”is gained.The  goal  is  to  place  the  officers  in  locations  that  do  not conflict with each other, 
+    while maximizing the total “Activity points” for the day(12 time steps in a day).
+    
+    Main Algorithm used: A*
+    
+   2. Homeless authority.
+   
+   Project description
+   
+   Los Angeles Homeless Services Authority(LAHSA)and Safe Parking LA (SPLA) are two  organizations  
+   in  Los  Angeles  that  service  the  homeless  community.  LAHSA provides beds in shelters 
+   and SPLA manages spaces in parking lots for people living in their cars. In the city’s new app for homelessness, 
+   people in need of housing can apply for a space with either service.   we will help SPLA choose applicants that  meet  the  
+   SPLA  specific  requirements  for  the  space  and  that  also optimize the use of the parking lot for that week.
+   They are both picking from the same applicant list. They each have different resources and may not be qualified 
+   to accept the same applicants. SPLA and LAHSAalternate choosingapplicants one by one.  
+   They must choose an  applicant  if there is still a  qualified  oneon the list(no  passing).
+   SPLA applicants must have a car and driver’s license, but no medical conditions.  
+   LAHSA shelter can only serve women over 17 years old without pets. 
+   Both SPLA and LAHSA have limited resources that must be used efficiently.  
+   Efficiency is calculated by how many of the spaces are used during the week.  
+   For example, a SPLA parking lot has 10 spacesand can have at most 10*7 days = 70 different applicants for the week. 
+   SPLA tries to maximize its efficiency rate
+   
+   Main Algorithm Used: Max-Max (Verification of alpha-beta pruning)
+   
+   3. Autonimous car navigation.
+   
+   Project description.
+   
+   Find the policy for car to navigate in a uncertain environment.
+   
+   Algorithm used: Bellman equation, Markov decision process in an uncertain environment.
+   
+  
